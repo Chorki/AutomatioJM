@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">false</boolProp>
+        <boolProp name="useExpires">true</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller" enabled="true"/>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="42 /uma/v2" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&#xd;
+�&#x1;���I�c8=WF.��&#x1d;�0��&#x0;��&quot;x�nn�Pš�`&#xc;&#x12;&gt;�X�f7�m����&#xd;&#x16;a����P�%m�R&#x7;��~��7̿�U�e�I&#x4;r&gt;«&#x12;&#xd;%f\�8&#x6;�r9��%&#x7f;R����._Q͠q��2�~�N��T�E@��=�&#xe;7�$Ӧ�/ۥ8��b&#x14;+Y�&#x12;��;�L��y���Y9��@.h4iG�����&#xb;��G;��&#xe;�����&#xb;�~	z&#x10;���}�&#xf;&amp;&#x1b;ɔ��&amp;�p{Q(&#xd;��Q��9I&#x1f;&#x16;q]��J�V�K��b�ۢ�r5&#x6;^��ĺ�.&#x5;;(�n�&#x1a;2��å��{&#x2;;&quot;&#x12;�?�A�&#xb;&amp;d�Ac&#x14;��zUփ&#x5;���&#x5;��&#x3;��A���T�$��&#x7f;�&#x7f;�&#x2;�ږ���&#x0;�g&#x6;��F�&#x1e;z�&#x1e;&#x7f;�S�8&#x1e;���6&#x10;&#xd;
+&#x1b;Y!&#x8;�&#xf;&#x19;&#x19;�c�*v�&#x0;sJ�s�7�����&quot;�@q{&#x0;&#x1;d-&#x3;&#x2;��G�G2U&#x1;��Pn�Y=Vz|+&#x13;c[�r�{ כ&#x6;�:��&#x1d;H&#x1b;� ��ChZP�&gt;�h,�G3&#x11;�&#x19;�&#x11;&#x1e;&quot;5Ffь&#x2;&#x1d;ҷL��H�2i&#x19;� ɭ]U�&#x91;���KMΥc���zP�bҶ*&#x10;��@�M&#x7;&#x2;��l�&#x17;���F�&#x1;,�gya���c�]&#x17;ۚ6u��&#x13;&#x14;&#x14;�@�6�4v��&#x4;�ބ&#x1a;�㟙���&#xd;
+q��|&amp;(x��j�c	���r�i^�a�&gt;�&lt;��&#x7;�o&#xc;���u@OA����#�=�DN.�.&#x1c;(&#x1f;/&#xe;�� �@*�3E&apos;��o&quot;s�&#x1;&#x18;N�&lt;C/w�&#x6;P��8)�����ꁁ1���&#x1b;���l�&#x7;�&#x1d;&#x0;wȰ&gt;�&#x5;&#xb;6&#xd;�&#x13;jE�u@���R�؋����[i�&amp;�_ň��ה�S&#x16;�o��X�7�z��=&#x3;cyT�&#x6;X}t�=�LF&#x1b;Lx��4IW�D&#x2;�M]ެ&#x1a;k�+�&#x1e;��&#x1a;�&#x12;&#xb;&#x4;@�(���Fd��d&#x1f;��j�f�&#x12;�&#x0;&#x4;&amp;�&#xd;
+���&#x5;��$����1�+=c]&#xc;YZ&#x1;1&#xc;�w�&#x15;��&#x15;��&#x1e;b�Y&#x11;&#x3;��p�H��`+�Q��&#x0;)�u��^Y0}��2ev��`��0\~&#x1e;0&#x5;/�A��jF&#x3;{&#xd;��j�Mct&#x19;^VB&#x18;}8.���.&#x7f;�;r�&#x2;��~z&lt;ԛX(��%2�;�D��]�&#x17;&#x18;L�x�;ou�Q^�p�*�ޝ$H�7np�4$Q���3Q&gt;�&#x15;ŵ#N�&#xe;�!&#x1e;U�p�&#x2;�q|�&lt;&#x2;M�̳&#x11;�)w�f�W�� &#x2;l���&apos;��`���&#xf;܇�sBe�&#xf;E�t&#xc;F9�4!�$㱙&#x19;&#x18;�&#xb;��)��6&#x18;s���N�1�]��&#x19;�����kq:8j�僴e�&#x1a;	#k&#x18;/&#x15;��2�%�&gt;�2&#x6;X��&#x8;��k�_EĻ�L�H&#x3;ZQ�{�Q�d�@C��&#xf;�q�����Y�����2�&#x19;+&#x5;Ô*E&#x17;��/�}6&#x12;�O&#x1d;HИ�ҤM\�H�1����&#x7;B#&#x19;�&#x17;%��M_P&#x18;��&#x8;M����p-�&apos;`��|��!-W�=AA�7&#x10;���yO��/�a!����&#x11;G(h&#x7;&#x3;|��zG�_�����DБ�Gf3I&#x12;���v���a_`��	3I�?�k&#x1e;&#xd;.���&#xd;�#���`�5��ةqs,��&#x1a;&#xf;E�E�&#x7;^;z1j!�&#x6;�p��&lt;g&#x10;��B&#x1d;�c&#x16;�&#xf;F��Ȥvu��ǣ^�B�f&#x7f;&#x1f;�_����pw��Iɾ9�&#x13;�&#x12;Qcz�l�&#x13;P�sN���J&#x1a;L�r]��&#x4;�&#x7;&amp;�]���j�]�����&#x5;��~lh&#x10;kPDkk��K�97P�R:B{�(��&#x1b;��ɹ��`��m���&quot;��&#x8;�&#x1d;��&#x10;��i�G�_��m�B�&#xd;���&#x16;o�؎�Q���i�_P�u��l��L����9��&#x1a;�Ü� A��?�Z��=.�{B�&#xf;&#x1b;E�&#x1e;&#x15;ʧ���|���5k���䈊&#x1f;H�XU63��h d�Z	�&#xd;BsMV`	6N��j�̑�� �&#x12;d&#x1a;��y��&#x3;�&#x14;��+&#x0;-�����&#x12;�&#x7f;�l��� &quot;t&#xc;ʒ�@�1&#x17;��@&#x19;&amp;P&apos;-U��&#x17;���RX�!-W����33cr�&#xe;�V�&gt;&#xb;�gQGv���&#x4;&#x19;[!�&#x7;�A+���_.XuMT&apos;&quot;4��&#x7f;RX&#x1b;168�����I&lt;��N�OS���a�1�R�`&#x7;�u�l;md &#x1d;���o��փ�R&#x10;�n�m�&#x10;���M�7eJ��4�xC�7�&#x1b;�.�&#x15;��j�&#x15;TՁ�XAa�c&#xb;�=q*�|��	�re�N.�������еG&#xd;*�R�6�v�&#xb;�m�ھ��&#xe;&#x16;�&#x8;5��JB&#x8;\���Ď~e��&#x2;tO�Fh�&#x19;&#x14;���~GV�U�)=�&#xe;/�,�6C���6��_�9��2X�G���^0����&#xe;Z�&#xd;
+&#x0;&#x15;cM�V�&#x15;/�Q^��&amp;|`&#x6;L�&#x1d;�&#xd;&gt;&#x7;�8l94z�*�gl&#xb;�&lt;��5+�i���H&#xe;#ړ�]Ș������і;��i�l�LR+#&#x1a;&#xb;wd&#x1e;&quot;�N&#x5;\�2���&#x1d;�&#x3;	��X��j�&#x1b;\ʯ������2^	��G�7&#x18;�Tn&#x2;�\l&#x0;f�K�����&#xc;�D�Y�&apos;&#x13;z2=)+vs��&#x7f;�b��;p�&#x13;��&lt;/�̨��x�&#x1;&lt;&#x3;�&#x2;&#x13;� &#xd;
+�&#x8;�&#xf;Y&#xd;N {�&apos;&#x7f;����Pu�/}�&#x12;!�u�x�h&#x37f;v�&#xd;
+k�q�&#x1c;&#x1d;&#x1c;�H�\��&#xf;0�CE7�,v&#x19;�NK��(&#x13;�$5ɖ &#xf;UK�.�{&#x15;�q|&#xd;|��&#x3;�sF�5�&#x3;󏷻d;ǫzfWq@/�&#x18;��Cw���Yd�5b��7�&gt;b1+&#x0;�&gt;=?y��GM0%�C�(	�&#x16;�(h����y&#x14;&#x1c;ε�����|���g����n�8��{��&#x15;���&#x1c;��#����R�4�&#xc;V���0�&#x2;��&#x3;?��N7�ơ�h$�������s&#xc;�&#x7;:�#��&#x18;��j&#xe;E��W&#x0;&#x2;?S���&#x3;����RO&lt;@�N&#x2;�uk��1�&#x4;�o�&#x4;�&#x15;��=����&#x14;ݔ��v�&amp;���Z=i&#x1f;4o\ʽ��O�w1&amp;ƌk������&#x11;~gH�r�C�&#x16;�UE$G���&amp;�&#x14;mΟ*��	���J�L�&amp;�58��A&#x1e;&gt;e&#x6;.#sr�n(`�&#xd;&#xd;��MD�ź�b&#x14;�K�ĺ&#xb;�-��Y��S�Xf?p���T&#x6;�e��ʫA&#x1d;z�u&#xb;�&apos;&#x12;L&quot;&#x6;%%�&#x18;��^&#x3;&apos;C&#x1b;uO�6�!PnL~&#xc;�O ���&#xe;�*�R�ǋ|&#x1c;�9�^4!ֽ�nQ�C��R$s|�&#x8;�Z&#x18;���OT&#x1f;r���&#x1f;]&#x16;&#x1a;�r%*�&#x19;&#x1b;I&#x13;&#x8;�!2x�&#x4;�X�&#x4;κ&quot;���&quot;&#x1d;��&#xf;&#x1f;p;&gt;m��|� ҫ��J��&#x19;�!i&quot;��j&#x1b;&#xf;&#xd;T�F�&#x7;&#xf;����Sql�E�}�R��5�&#x6;��&#x5;hL��s�Hw��&#x11;A�L&#x1c;���Ė&#x12;�a&#xd;
+5���1}��\����DB�r�d��`�h&#x1b;&#x7;&#x1c;�&#xd;
+�9I�(G&#x6;/�&#xb;�?�q&#x17;L�q��&#x19;�&#x1d;P�儫ʵL߬o�Ct��&#x18;&#x1a;`�&#x1;�2&quot;�y&#x11;z�B&quot;aٙܓ�ا���8AG��!D&#x8;_۱}�f����pT&apos;����&#xc;76�&#x0;#p�{&#x1;&#x12;�r^��o%����&#x12;އZ	!fbQylg��&#x12;�&#x14;���&quot;���k�(�x�&apos;����#�(����Ex_,&#x7;�����&quot;�Q�}��&#x1c;v�a�O&#x16;&#xb;l��D&#xb;�:���@�0�?��b�&#x11;�Ι#�$.ٛ��ֲ�&#x1c;����ߟ��{����?��&#x1ab9;�&#x4;m&#x1f;X��&lt;�y7&#x16;&#x2be5;&#x1c;r61{�[i6�&#x16;}f�,%a&#x0;P��h��܀`&#x5;�&#x13;^�pn�s�*ߪ&#xd;(r&#xc;�hC�&#x1;�nq�������@k\;���_�&#x1b;��&apos;�&#x19;��R&#x15;�̢�&#x12;�Vh&quot;W&#xf;&#xc;8a(���&#xd;
+��Q;9���[#&#x14;4���tn[�&#x2;W9J��&#x14;&#x12;��]�M	י��&#x7f;�IHR�R�&#x11;&#xc;�D�t&#x1;ϖ�St���&#x17;&quot;�&#xd;u�&#x1b;��&#x3;nJS&quot;�&#x15;9�&#x12;a��Y�&#x2;	�&#xf;&#xd;&quot;�&#x19;S��w�F`�K�ԃN*��h�&#x1a;��\P�&#x15;�ī�&#x1c;{��8&amp;���C&#xd;=p�=��,��_��`�V�&#x5;��D�evC9آzcl$�!{\�s[�&#x13;����&#xf;�倷Fj�U&#x10;��|u%ۻ�&#x19;p��B�O�2&#xe;OLSV&#x4;��?�]&quot;c�+�!�[&#xf;3߷!ݵ���&#x6;���*%J���~&#x2;ʒ�M_&#xc;;3~(&lt;ݑq�g��/V&#x3;&#x5;������d!R��?e�NZ��1e�)H�&gt;�p�&#x1e;U��&#x1d;Q,�_&#xe;�&#xc;\���睑�]��-�&#x8;�Σ��%���&#x6;&lt;���&#x7f;��r�OZ����tXU&#xc;�%�U	�0�&#x1;�i&#x15;���&#xd;�Uz�&#x1f;�4���r&quot; �&gt;&lt;^��d:TY&#x1d;&#x1c;)m�x%���&#x10;\WJjԄy/(ޑ���F&#x1;&#xe;D&#xe;� ��T&#x16;���Ӿ�F8X��ҙa�uV&#x1e;��&#x2;������&gt;*�Z1�&#x16;�&#x14;&#x1e;��n��4֢.���&#x15;�0&#xd;	~Y��o�L9��&#xb;&#x15;N�e�&gt;�t&quot;���9)&#xf;�P&#x13;�Zv��60��Af@*L�EO$��+���A&#x3;R`H&#x15;* &#x0;M`4n+�8.��*/&#xd;
+&#x16;yM��,��8�&#x1;�S�&#x5fc;&#x15;Z��x#�BE3YwM��4jU��-��D!r�ŮHv����X�%�ٱrJM&quot;�R&#x8;�&#xe;�&#x11;���&#x4;7d�����,aHV���x-GJC�95������̀�Wj�X�Q&#x1d;�&#x5;�Q�&#x10;�,\j�/���7&#x1f;丞 )�{��Ta��(�g��lZ���i�d1$\v&#x12;���	�&#x2;�t&#x1c;o�61�&#x16;&lt;��ǵ8�`�S�&#x6;�&#xe;�Q�m�@��&#x17;ݓ��M�}&#x2;S��?�ɳ��0_��`&#x13;�R:�X�ڑ� �&#x0;%(2� &#x1f;���%�(�&#x10;z_�r�&#x17;a�KQO��رY�j�&#x4;&lt;���)���2h�G����3Ъ&#xb;3&lt;�&#x4;��&#xd;
+?�L5��q�_f�&#xb;�ϳe&#x19;�9��7���&lt;�&#xd;р�G&amp;��W�T�&#x7;�&#x1f;y�rҦ��mI�&#x15;�w�#�/ &#xc;6�rؼc&#x7f;O&#x19;�+�J�\��h�&#x11;��&quot;�1߶�F.&#xf;:���&#x5;v��t��6&#xb;G&#x8;y�Wx&#x7;�����ێ6���&#x19;�`���l�&#x7f;��&#x5;��&#xc;�&#x8;����&#x2;\&#x7;L0&#x7f;{�iI_&#xc;&gt;&#x1;�w��ٴ��$&#xc;3���W(r�G�R��&#x19;&#xd;}{�7��v��3�/O�k���w&apos;~W�ɫ&#x4;R��WX��&#x4;�&#x17;��:&amp;���&#x3;�&#x16;M����&#x0;��ެŶ�tg��P&#x6;V&#x13;&#x14;&#x1c;\p7�Jd;�I�b�&#x13;M6�	&#x16;��G&#x16;���g������8tg��$Y���0�6��C�K&#x16;:���+K�&lt;�v�K&#x1;�&#x15;&apos;�o�ԙ&#x15;eү��-0g!�p&#x18;&quot;zu&#x19;�6Q��&#x3;k�av&#x16;�&#xc;�g�;��03�|f5&#x12;ڀ��&#x1b;�P��_&#x18;&#x11;��&#x1e;�&#xc;�jn��Ƈ֖�~����M�����&#x16;N&#x10;~ROڋV�&#x4;@�&#x13;�&#x1;b\�R&#x7;�&#xb;н��&#xb;m�K+G���+�q&#x3;N��G���Y0l�&#x1;��v~��$�L&#x3;&#x1f;p��&#x18;~@&#x0;��b���&#x1f;�&#x14;�K���&#x1d;&#x10;Pۏb #I�8�z��X&apos;��DY�B*&#x7f;&#xc;�&#xb;-_�&#x10;&#x19;�n��O�&#x5;�[��r��]8�Ky&#x3;��_&#x7;���3&#xe;�O&#x3;�&#xb;�p3��)c��&#xd;
+J8�&amp;��&#x7f;�cM2&#x11;^Z�{+&#xf;��&#x2;�Vٿg4?��9Üw�0X&gt;�_&#x5;2ZG�1&#x6;4�k/N&#x3;*L`&#x1d;��ᜌ�\[��El��r&#xd;
+4&#x4;E��sf�&#x8;&#x1d;��/��]~�&#x11;��&#x1;��&#xd;
+&lt;���&#x1f;����@&#x4;�&#x1d;L&#x15;ZJ�ՙ��&#x5;{�c)C�&#x0;l&#x1d;�&#x1e;��&#x14;�CR&#x1c;�̝/�����ڢ&#x14;���o&#x10;��R���E|��C�c_(U���&#x11;�&#x2;&#x6;F��@�����÷9�&#xb;�(9��M&#xd;
+����&#x1e;]�Zu��&#x8;&#x6;:8Go��&#x11;t��]1&#x4;&#x6;&#xd;
+nr&#x1;&#x5;|k�#�`,&#x10;&#x1a;~ &#x0;�b�&#xd;��&#x16;(�&lt;La�Ü��a7)�ū\&#x4;��&#x7b5;f%&#x0;&#x1d;i/YR&#xd;
+3&#xc;�	CdAp�Z&#x18; ����Bm*���!���C4s?���Y&#x0;~�`w)+�w�;�&#x6;F��w&#x0;�L���؆�&quot;LF̂�8Y����&#x1a;��&#x10;�h4�v�Qz���&apos;�O�`�p�&apos;� $��g^&#x1f;�2&amp;�WN�Y�&amp;�&#x15;�&#x1;t��&#xe;����F+=�}~[��&#x1f;�&#xd;�&#xe;��&#x1d;I$]�(&#xe;&#x3;��$�#w4�$U8&#x0;�k&#x18;r�&#x1c;�Oo3v�P�&#x14;4����T�i&#xd;
+&#x1f;�~�C}&#x6;@��NbM&#x13;�)�鼢OI����&#x8;xϹU�&#x5fc;V��&#xc;��&#x12;�!O&apos;�&#xb;�8��vx`/g$$e��񺧬&#x1f;����B�3����A�R˿�&#x8;&#xc;��/w%&#xf;T�,��4�U&#x7;&#x0;TA���S�+jd���[�P�`D&#x15;��S�&#xf;� &#x6;|��fF�;&#x7f;�&#x18;&#x1c;�&#xf;�&#x17;�������B&#x1e;G�&#x7;(�̧c�.~v6*&#x16;�W��e	���&#xb;���mY�&#x10;����b⁛o�ό��&#x0;&#x3;�ߙ�&#x5c8;������&apos;�UMۂ�gn7)�&#x10;:T&#x7f;&#x17;����$�碂&#x4;\&#x4;5�qm����&#x1e;�isd3�.L�#&#x0;���7�+&#xb;p��l�&quot;^V&#x7f;Gwҳ�����GЬ&#x18;�&#x19;&#x4;�&quot;+���&#x6;���=�d=�&#xf;&#x1a;,�Vnd&#x1a;���Ur.7�&#x16;�J	���j��&#x13;�&#xf;&amp;s&#x12;&#x1a;�Ƥ��-��&#x19;��&#x15;VVɣf�&#x0;?)�QZ&#x3;����&#x1a;@7���&#x7;_�®�M��&gt;�amt&#xd;
+)}&#xd;
+&apos;��ڭ&#x1e;�F�[�&#x18;�����D�P�\YP&#xc;wW��[L&#x7f;�*C&#x12;�iexz�&#xd;
+���|S0m1&#x12;k�p&#xb;�&#x3;&#x18;��&#x4;��W;�!��*���&#x1;(�S�g����x1L�]�-��&#x2;&#x16;�d`@B�@���)&#x14;�&#x7f;�&#xe;�ɿ2rC�&#x1e;���&amp;��fwW&#x1d;&#x14;�/���&#x15;&#x0;&#xe;��k�R&#x1f;�G��&#x5ef;&#x18;oՇV�&#x8;�Al&#x1b;m�x֭T���SvP��h��jK&#x1e;X�&#x0;*&#xd;�4�(W��L�@�Id�&#x2;���%A&#x7;��/�T�V�&#x19;?�o��hm~r�1H�^O�]h�s��r~ĕ�P&#x6;&lt;��S����Ov�����&#x12;�Z�&#xe;Z&#x6;Z�j�&apos;�u5�K�����b/KaD��_�&#x1c;��&#x1f;Kr&amp;��}�9��kQ馆�@�&#xc;�BY&#xf;�?&#xe;\M&#x10;&#x6;: ��hf�F��&#x1;,b���d�v�&#x2;O�1�&#x2;�Ȑ�[tQ�&#xc;B)�qb�&#x13;&quot;��y�7�1&#xf;&#x7f;0�&#x52a; &lt;&#x2;C��3|\&#x14;*�a�0oD����M��Kh%&#x8;��+�g@K{VO&lt;���8�&#xf;�w�k�!�4�Z͕yE&#x8;��Qз��&#x7f;���&#x1d;h�=�~�]P&#x1d;�&#x10;�G9&lt;L�I���U&#x14;&#x10;)o�ǃ��O&#xf;&apos;^�LF��VZz�f��\/`VA���!&#xf;H����v�n�Q1L,ɛq�c�Äpm7ؐc���l�&lt;&#x1e;���mn(�]�&#x1a;&#x19;5&#x5;��?�������O_�ؑ�0���2&#xe;��60��h&#x6;b:�i�!m��4 [&#x19;�.��o,�9��t��y/R&#x12;&#x10;(Y�L��ݟG&#x4;$J�_dc&#xd;.~�3&#x1f;��9f���8�{sX�&#x5;!�&#x17;g	������p���u3&#x1a;&#x1f;6��l�����c�Ћ��ʋ�&#x11;h&amp;�F&#x3;���&#x5;�&#x7f;K&#x19;��&#x7f;�:�ғk���8&#x5;0�*��&#x1d;�S�el�@�&#x14;#$&#x1d;QMoa�&#x1c;�&#x5;?7���6�&#x6;&#x1c;��ܼ�&#xc;�*5�O8+�&#xc;/&#x11;��;&#xd;&#x5;&#xf;k�&#x7;�a��ܝ��~Q&#x1b;�&gt;���&apos;ҡ �&amp;&#x1b;x����E��&#x1;?9&#xf;b&#xd;(&#xe;��D�L(Ǔϡ&#xd;D��$�&#xf;�F*G�	�(��&#x5;�(�&#x13;@�Ƀ�N�y iq��t&#x1;�7�,��~��&#x1f;D�M�&quot;n�b�莵�Ά�jE�~�.&#x19;g�v�&#x1b;*&#xb;�[J���Om&#x1e;R&#xf;O�����0}+;��s+5}�m3�Z�=1��[&amp;�PX���e����1ߴi�9��&#x11;G�z���&#x1c;�e�&#x10;z&#x10;���5�Z�&#x8;��A��&#x11;&#x1e;&#xc;w�H3�f�W�x�&#xc;k�&#x8;��&#x1b;B&#x14;9����Q��O&#x18;+ jr]Jϟ[�bļ	|�Q�&#x3;Z*�%����#���H�=JJֳ&#x1e;k��&#x7;�&lt;�Ŭ��3k̫-\�r3We���&apos;&#x0;���츍^𐑝&#xe;ꓒZ!Ub&#x5;�&#x5;0&#xd;�����&#x2;2�-LF��&#xd;&#x15;&#x6;�&#x16;i7Wa���XŲI&#xe;w�3,�ҝ�c|&#x1d;�T&#xb;�&#x11;�g�@&quot;&gt;&#x12;�qb�YB�n_�&#xd;
+&#x5;�A�j&#x13;&#x18;_�T&#xe;��Ꙑk���&apos;M&#x1b;XB��U��Z�&#xb;&#x13;�����2Oy&#x1;q&#x3;l&#x17;܅�U�9F&#x14;�=��Պ	[�?�&#xd;
+&#x6;� &#xc;&apos;/[�Z�X2��&#xd;y&#x2;\��t&#x6;&#x15;B�\&#x3;/:�N�Uz��&#x1e;!�_��&#x1c;l�&#x1f;�mP_&quot;0�wT��&#x1f;&#x2;����&#x1d;���t�5Y3�7�&#x7f;�ۇ��u��&apos;&#x17;ξ�&#x5;6��=:�nV�&#x1c;�i��&#x7f;H��L���&#x13;@�$��.&#x1f;�_.&gt;�.�g�?#�b�&quot; &apos;&#x18;&#xf;��&#x0;�&#x1c;��w�p�&#x18;΅&#x1f;`���&gt;�З�5k�0�&#x1e;;���`�&#x1d;&#x14;}Y���&#xb;Y&#x8;�Fo&#x11;�}�ӂ&#x1e;�&#x7;!̦�&#x1c;�ׁX�cv��;��*�&#x3;y�&#x0;�	Cס,,�&amp;aM��H&#xc;�?|���&#xb;�&#x15;�9��G&#x1e;�ޜ�N��&#x13;��&#x1c;8�翢~(��,ߨt ����&#xe;�&gt;�7#&#x1d;������&#x6;�&apos;9&#xd;uʑ�+E&#xb;&#x13;0�G&#x10;ZH+1#w7[&apos;{ρ&#x1e;�a &#x11;I�M�/m������t�&#x4;�mB�Wéo!&#x58c;e��)&#xe;��&quot;&#x14;ϸZ{��&#x1d;$�&#x18;&apos;*�n���&#x1d;q�t]Cs��/ɕ&#x7;&#xb;��=_y��_Ph&#x1f;���Z�d-�m&#xd;��K�肤��tو����t��*���o�&#x1e;�옘I�����%&#xf;&#x1b;k�9A&#xe;���&#x14;b��G&#x8;�̓���=���&#x16;�&#x10;?&#x14;�1h�%&#xd;
+#&#x1d;�*&#x1b;�@\_.�Ă&amp;&#x7;:�z=R���Ռ�&#xc;�*�f�&quot;��k&#x10;��i��=���8&#x7;����&#x18;�(�YTmd.	�&#xf;0m&apos;&#x1f;c����&#xd;�&#x1e;nmgS]�S�k�}�F�:��p�M�d���&#x18;&quot;�&#x7;���0y&#x1d;j�&#x18;8�TO�ߵ��_!8&#x1f;�&lt;P�JIA�&#x14;s��`R���x&quot;��&#xc;�R;?&#xd;
+�&#x1;&gt;gR�He!��&amp;�&#x5;Qv	�U�&#x7;�&#xd;
+&#xe;D�&#x18;���H&#x4;ק&apos;��-�)��5&#x12;oO�&#x8;�`&#x12;��6-[&#x12;����a]&#x7;&#x15;TEW�v��IR&#x12;I�&#x1b;x7yJ6�s��&#x4;c�&#x11;^�[����Zv���-(&quot;��, �`	&#x1b;&#x19;Q���/29��&#x12;=���شG��S=F��x�P�p�k�m�&#xb;��;&#x1d;��{�&#x1;�&#x1e;�&#x0;ݓ���Er٧&#x19;�&#xb;sA�ޖR�pt�&#x5;; �R��t��[D�&apos;C�&#xd;
+�.���C�&#x16;U&#x4;c�&#x10;G��nd���&quot;Hk&#x15;c�&amp;����C&#x7f;kC&#x1c;�U�&#x0;Fae�6���B{Ű��&#xe;��tT�M{�ܪ��i�&gt;�0�&#x7;�7��&lt;��H�a�P̷O&#x10;4�49&apos;&#x7f;��8&#x10;�����b�DR�ٶ��B�+���}��m9�y(&#x6;��J��W&#x18;�W&apos;#�g�tT�/6&#x1c;��h����0Ə}��Z��&#x5;,�X�v�4��7�&#x14;��KG��{&#x1c;&#xe;&#x1f;&lt;���&#xd;$:P�I�&#xc;M&#xb;Z4P3~��d����cNё��$;�_�QX&#x1c;�|�&#xc;#�DA��#�3&quot;)��5��/K���&#x2;���tG��+VX�&#x17;,ҡW���&#x3;�X�&#x11;&#x1f;�&#x12;��@ug��Z�2�&quot;�n�&#x15;�ܫ�H�n�u���o�l1&#xe;X&#x1e;�:,h�x&#x1b;��;a&#x1a;&quot;&#x10;�i*���e�xf&#x10;&#x7f;�ճ&#xd;
+�&#xd;
+k�㻾�Z����s&#x1a;K&#x2;ό&#x4;�xۼKT��]�&#x4;pJ����~��}��K�T��5����&#x19;�6�c[�&#x15;E��LL&#x19;&#x1f;�ڱ�&#xf;e�&#x3;͘�&#x1c;d�;�.&#xf;;A�؀&#x8;^�W͵-�&#x4;$��ڎ֙�&#x1b;�$����&quot;}�2\&lt;���⁹�w�tU��E��&#xc;�%!ل ���B̍.��6�:&#xc;*�.�JQo,����TU�&#xd;
+. ��&#x11;����Q&#x1e;}&#x4;.��D.-�&#x1c;���t���l{d&#xf;O=x}����&#xc;K&#x7f;&#x7f;�&#x5;P�&#x2; &#x17;TQ��I�x�ksq H&#x1a;G0��S)$ѥ��,��z&#x10;�4�&#x19;�n&lt;u�&gt;p&#x1;��~r�?&#x1;����&#x10;&#x1c;f&#xf;����&#x3;�&#x1;����L�#&#xe;H�&#xd;��OR��V��#�&#x1e;�hH���t7�Z��c�&#x1c;�x�t��^&#xd;7)��#*�&#x14;�z:2���:v�+ϫt�/o��M&#xe;���f�n&#x1c;j��&amp;&#x10;��)*d��#fa�j�u![w�&#xd;��&#x2;X����M&#x4;���Y����n��)�����w&#x1b;[��;�Cl��%�{���Z��)&#x4;*1�j&#x1;�_�IE솲&#x0;&#x1a;�e�%E�D��I�I%��&#xe;����&#x8;&#x1f;&#x13; &#x1;g�S�����&#xd;&#x11;&#xd; ��9��H�K&#x10;�e-�)eY�|�&lt;D&#x5;����1&#x11;֜l0/&#xc;y�P�Ki&#x1f;&#xe;��d&quot;���&#x1c;}ةJ�VUo����8�l�a_�d��&#x8;��%Yr����kGҖr���Q�R�E�n*b��0&#x16;&#x4;&#x1;&#xc;�Ƽ1�ٱ&#x3;ݾ���&#x7;&#x82;x�&#x10;���d&#xd;&#x14;r���&#x7;2�RR*-�r��K[��&lt;,��&quot;�Cn*&quot;]ɻc�צ&#x7;&#x3;&#x2;�.�&#x1a;�&#x1b;���&#xc;�&#x11;���x �C�p��4ϭ�0�h�ď��9�)�C8I+�c&#xc;7Zy�vB�&#x3;�&#x1c;�&#x4;J�:&#x7f;�/I�&#x5;aʶ�{A��y=1再&#x5;&#x17;&#x10;�&#x0;3��l@|ڨ����&quot;��H���[�&#x0;̜g�����������5p굩�N�YY�E&#x1f;ǜ&#x17;�\���|2�&#x15;w��Fƕ&#x12;&#x18;�j1*�~@&#x18;��6��&#x1e;cS�0&#xb;�|�f�&#xe;@`4�g&#x14;D攍��&#x16;�(�u���&#x1f;N_&#xd;��&#x1;Χ�&#x1d;���c����DFU�Ʃ&#x19;�ũ��&#x18;�D������U9j`��q����&#x7;�2�*&#x1;[�&quot; &#x18;&#x18; &gt;��[o�ȍ&#x7;��WjGa���q�C��&#xb;��BԕJ�v�&#x11;&#x1d;�&#xd;��ӟ2��:�&#x1b;�V��v&#x1f;谈^�XZ/���&#x4;&#x1e;&#x37f;&#x1f;�;��Z��KI�&#x19;���D�@&lt;��S�&#x7;�&quot;i6�k.��an���������Bŋ&#x1;�1+�&#x8;�?&#x1c;-����l����Q���#v}U����&#x13;&quot;yg���&#xe;���𣿃mujn½&#x80;&#x1c;��OzU��&gt;=F6����\&#x19;i;��&#x6;&#x12;�&#xe;q�@V��oU�&#x5;&#x14;��;�i�&#x5;�r�&#xd;
+3�)��o&#x8;n�S[�&#xf;�1���&#xd;
+_[v���&#xc;&#x7;�a�Pp�|�&#x1a;Ǘ�&#x2;&#x16;�]&#x1f;����&#x6;y�Mb&#x6;͆&#x5;��P�&#x14;�܏/,��&#xb;&#x1b;�sDCD��B�M&#x1e;�D8����E~�&lt;u&#x15;r�۽&#xe;�&#xd;�H�&quot;�?&#x1f;�&#x1b;�&quot;^��Ze&#x15;ޖՂ�,)洸M�0åPw&#x16;��GS&#x1b;&#x13;�)������@��-&#x19;�&#x16;S��&#x3;b��&#x4;�bA���7�x�Ҋ|��i�=�oY�Nv&#x11;7Gs`=��&#x17;�8���&#x12;�ջj&#x1f;�V�Q&#x15;ٰz��&#x13;&#xb;�~�n&#x11;�&quot;X&apos;&#x7;�&#x6;}ڷ-�{&#x19;�V)�_,�&apos;����^�O��7�����r&#x10;�r�T˾&#x1; �&#x1d;/ʖ��F�&#x10;�B~9&#x1c;�l���&#x2;������6ݪ�;��&#x8;�,�JdH��u���C�~&#x10;H�s?LH�;������8�WX&#xc;c��R�hؿN�X�p�&quot;|Oe&#x1f;O�d_m�S�~z��&#x19;E�t~&#x19;L��&#x4;$Jr�1�l�j%z��D#&#x5;�[iպ:2�q�U&#x1;&lt;�{�-*:�Z�&#x7b4;Zܺ���ܭ���`&#x6;-&#xf;�&#xc;O�c���xڀ&#x10;vJ��$���q�&#x15;rP��eq���&lt;��I�I�ʵ�u�P2}�mL=�����&#x1;&#x4;��A$&gt;&#xe;�I?m$1&#x15;�&#x1e;1m��}�D^&#xb;\�H(&#xd;N-u��!P���&#xf;&#x6;2�&#x2;g_|�FĜlz&#x5cc;O��g9&#x18;�&#x1f;P�!�&gt;�&#x12;�.$��a��&#x1e;�x�^&#x14;8��E��&#x6;h#��u~V^H�?qĮ&#x13;[x���&#x7f;y��gd��7L�7{m�_p!�c�z�&#x7f;ƙ�O~�p&#x11;�9֣�&#x19;�E�`���U&#xd;
+&#x2;�`��_䝥��k@�ˠ���t��tY��X9}8�v&#xe;tkD�&#xd;
+���	@�&#x3;�Φ�D�䴧�&#x11;ҷv���L]��Q�&#x1;��&#x16;���&#xd;�;�h�e�ǣp�����B�7��s��Xv�;�r&#x2;&#x10;] @�4�3&quot;0���,$�U�;Ӱ&#x0;�#�&#x18;����%8��x*&#xf;&#xd;
+U�S�[d�M:��&#x7f;n&#x1c;�&#x1f;E�A���4�%rj�&#x2;&#x1f;�Q��xC&#x7;���Y5����N}9;���@Q�-�/�&#xd;
++��&#x0;գ&amp;�n&#x19;f&#x7;0�,z��9�K�ƿ����&#x2;ֵ~���~G�p�ll���gq&#x0;:&#x8;*�r��D&#xf;&#x1f;^�&#x52f;29�����ƈ��W&#x1e;w�?5&#x16;�&#x1e;�������/���&#x1e;�Ĉ?3^�d�~���.]hT�Y�U�=�&#x15;��6�H��n�&#xd;̉/R!�f�D-z7r�&#xb;x�Z$	��D.�q?�N�!&#xd;&#xd;�#.-&gt;rɷ8&#x14;k,q:,�&gt;a��ћ&#x6;���hE��E&#x6;(]�&apos;��S:�&#x12;�&amp;���#G���`�/�E4Ӗ�&#x1c;�O5Fȗ&#x16;�&#x1e;&#x1d;�2H�&#x16;�ײ�AB�&#x5;$AǊ���!�pWΐ:���D9&#x2;_���A�&lt;���ʱ&#x1;�e#�����j&#xd;3&apos;���k�$6�|�%�`��8/&#x0;�&lt;&#x3;���F&#xd;�{��&#xf;	\��P;&#x8;�\�e��&#x3;��&#x1d;&#x1f;��O)&#x1d;1��&#x12;�%���2$�8�&quot;�[�P��{��/�p����e&#x6;Ƽ%B��S=&#x19;j��&#x1b; �J�L��,�k&#x2;�q���}&gt;�&#x8;��LFSg�tKɶ�k9u)�����!&#x17;vv�kY�&#x8;���&#x1;�&#x16;&#x2;D���6�C,���.[V&#x9b;&#x8;_�����N�Ȭ�����@&#x7;�&apos;R�5��&#xb;&apos;T�]�&amp;��&#x8;H\N&#x1b;ܫ�&#x14;&#x1b;&#xe;@�֘�ɭO&#x1b;&quot;&#x19;&quot;��&#x4;�|�ي�&#x15;�\&#x1b;q��?|B����8q&#x14;]&#x8;�&#x17;&#x8;���X�K���&quot;&#x3;k����&#x10;;��S+&#xf;դ���	fQ�^�&#x11;��M&#x3;��RS6&#x2;NGS���j� |T�&#x4;�&apos;%�~&amp;�ڢ;ܖ�a�&#x1a;&#x1d;v�i�OЩ�T��|�=�	j��&quot;����k��ı�&#x10;�6�&apos;rL��&#x1d;VE����~cz:&#x5fe;�&gt;�6��i�&#x6;���PP�D&#x10;�p�&#x11;�[ݥ&#x7f;&amp;&#xd;���&#xd;�)&#xc;��v�����&#x15;��&#x0;�_3D�&#x7f;�4W�*{wI���&#xd;
+&#xd;
+h�9� &#x1a;�&#xd;f��e�2&#x3;#���fs3���p&#x8;&apos;�b	&#xc;�&#x19;ЎE	�LN&#x17;&#x13;�J&#x7;&#x6;r�&#x18;�����.)$=�Ҧ�@�TR&#x14;�T�ݤY�\�(&#x8;���m�lc�Z�&#x10;&#x1c;��UB����&#x13;�Ћb���e�cu%����$��k�_&#xd;C&#x4;&#x1d;3�d~`X��L&#x18;�m2:��n[;R��J���&#x19;���1� ]�W�hk8��&#xe;���&#x1b;��2&#x11;RC&#x18;�S,��C$�SD��h��j�i�&#x1a;K��C�&gt;9G�&#x14;n`��7��&#x8;ay�&quot;O�&#x8;�N�.X3�&#x2;/3h/&#x1e;D�87m&#xd;�7�?״&#x14;&#x2;n��&#x12;�&#xd;hDN�EJ&gt;&#x1b;I�!����Z�Ps�!l&#x14;`&#x18;� �)�����	|�|��_0��4�&#x8;#������@�&#x11;�&#xc;]�~,&#x5;a�-�Q�&#xf;&#x15;֑�]��%�xs�w2�t/A&#x1b;r,�l�=Lu� z���IQr&#xf;Bf�A_�9&amp;&#x11;���!����&#x13;&#x1;F���h�4&#x7f;��&#x7f;��!�&#x8;Q&#x18;��#�&#x1b;�J��&#x1b;4�&#x0;�IB�&amp;� �ۥ�U�B~�q�\���p�Ԅ�m&#x13;o�U3&#xf;L�&#x6;�@ew7ڔ+h�h�����&lt;�� ;&#xb;�&#x13;u���[�&#x19;!�hՙo�&#x8;&#x1a;&#x1e;u��t�h���bz64�&#xd;��&#x15;&#x18;RS�OG` x�v��2�&#x1e;�:�&#x0;&quot;%�E&#x4;�y&#x2;(�V����.�&#x1c;��z�ǩ��&#x1a;�� &#x11;�K&#x19;��&#x13;��ғԈ�ǬS&#x7;���&apos;�D9*�&apos;&#xb;�&#x1f;�Ԝ&#x11;�`&#x1e;7&#x16;�K����ge�&#x7;y���&#x17;�BK(� V7�&#x1b;/��1��&#x2;~#K���{JN)�_�&lt;�W�&#xd;
+�j}&#x0;OW��z=-�h��5%��l�8Q�Y&#x1c;ʖ�&#x1c;l�&#x5;&#x15;�&#x1f;&amp;H��&quot;s�J���A&#x6;7�ֵI�cL z�6G�}��&amp;&#x6;ʘo�tm-��&#xe;|�?�Z�Z��!-�[�&#x5;)̂;�L�	��#�8��h��&gt;�O��ő)&#xb;��&#x16;��&#x1d;��&#x16;��&#xd;
+&#x1e;~G�[���&#x19;��&#x5;ex&gt;��&#x1c;f�&#x1f;�=�&#x1f;&gt;L��2��+&#x1b;&#x0;�f�,t�B�2�m�����o ���&#x1f;&#xd;
+�^�[iR��&apos;�&#x14;�&#x17;��h14�īP�|�I��{W���&quot;�=��&#x1d;�J)D[=���2�k|��gC&#x6;X`�r�U�1��q&#x7f;^[@�&#xf;�&lt;O�f��;�&#x19;M�xk�Fz�W&#x1;�sG&#x1;`&#x3;Κ0*��o���L��=(L�U�nd&#x6;�� �&amp;L}&#xd;/���Ѧ{Yb�&lt;��&lt;S&#x15;���/��}}_����0�&#x7f;e����(��j&#x6;�X$�]&#x16;�A�&#xd;
+��#�x&#xc;$Xs&#x1;r�&amp;��&#x14;&#x1;��0�&amp;@�&lt;i@e���&#x6;&#x5;&#x15;GK�J�o&#xf;Iբ� �uv�H��h_&#xf;����X1�X����}�o&#x15;Zˋlրgo�&#x8;����1$	��&apos;|���G�&#x10;�o�&#x8;5e&#x3;&#x4;&#x1a;�^]�&#x1f;B&#x3;�&#x11;WO�;��&#x19;��0����F����V&#x1d;&#x18;s�&#x5;&#xc;&amp;a��C �N	&#x15;�&#x1b;&#x8;;-~_&#x16;�AM��1&#x7;#ה� 3VnMs�&#x1f;��71��&#xd;7���&#x1d;�&#x2;\&#xb;���&#xf;���&#x16;m2�&#x18;B��0r�&#xd;J�,*�&#x1b;O�!N��&#xc;$�&apos;�&#xe;�&gt;���_�F��&#x16;D/Q&#x1c;7���+}�n�[m+�B#G��&#x1e;��r&#xf;&#x8;&#x1a;d�d&#x17;ܳ&#xf;Y&#x14;�#�0�&#xe;�&#x10;���=e7&#x10;��&#x1d;����1!�&#x11;�hl���&lt;��#t������3_�c��&#x10;@�x��FRV&#x1a; ��/�$`�H&#x13;���&#xb;���oY�̖�@��d�s)y��O{Ť�6*�	{uϬӌ��*g)��II՝&#x5;b�9��&#x1e;�&#xe;�O�C&#x0;�&#x1;�)g�&#x1;ِ��x�&#x7fc;Ȋ{!xK�n�����t&#x16;�hi&gt;&#xb;i��n���Z�&#x7;&#xd;
+7�e��&#x1;lG}&#x6;MB&#x7;�&#xd;
+�&#x11;���)Y&#x8;�&#x16;� ~�nj��X&#x15;)�Ԅ��]�o2��v�lâ�!=u��Xx���L���&#x11;q&#x6;�&quot;�q��&#x1c;&#x1d;&apos;�+k&#x14;|xN�ⰻf&#xe;��YQVbxC&#xe;o�&#xd;~�n*on�8	&#x1c;�&gt;�d�w��&#x14;H�-�j P&#x11;&gt;��N�&#x1f;�q&lt;o�&#x10;��ҙf(7��&#xd;
+�&#xe;���&#xf;%�G�K0&lt;�ă��b�l������t�a�$m���o&#xd;
+)s&#x4;d���CT!&#x15;,Z�Ty���H&#x11;���~F�J�Ƶ�hz�U�&#x15;P�RJ&apos;&#x12;�{�y�d��L&#x5;�6���&#x19;F,2&#x5;&#x1a;��2�d&#x17;*�&#x8;1[�&#x18;~�pC���&gt;&lt;�m&lt;f&#x1e;?Ǽ%��!��&#x1b;�v�&#x7;�&#x4;`��p�8`e^���=i��N1Jb���&amp;%�Ʉ)�R���k��c�O��&#x1c;&#x18;�$�dK&#x1f;�?�3&#x2;ˠ&#x11;�&#x7f;ƌ&#x1f;v)�&#xd;u`%&#x1;p��{&apos;�ףz�?�H&gt;�#*NQl�B&#x8;���ˡQ�P����&#xd;
+��[�&#x15;�q����&#x11;XQ�j&#x1c;=��Y#0:M��J&apos;���(��&quot;ʻ�W���j�&#x7;�d�&#x74b;G1�%Z02�4���~&#xc;]�&#x15;�J&#x1c;A��P�BgcsW&#x1f;� 1�a8�҆&#xb;B7Jkƞ|��o�@&quot;�@�4`�g{��s�a&#x5cf;O&#x10;���+��}&#xd;
+�L�&#x15;&amp;}��K@?t�:�n��נּÆgX4�pD�&#xd;��M*5��&#x1b;Q����&#x11;=�CG&quot;Ҽe	C�&#x1c;�&#xc;�H�h`&#x16;��ξ��o11z&#x14;P&amp;��&lt;�&lt;�&#x1d;�����z�9&#x18;&#x5eb;��,���L����&#x1f;��tO�K6�Y[�K��}]�{�UC�8i5&#x18;U�O���&#x8;ui�t=}0��&#x7f;����&#x7;�&#x11;[�-L1��&#x1f;&#x17;&#x1a;=��T���N��&#x16;S�f��P&#xd;��oC&#x1e;~�m� � [&#x1;z8`z���s�&#xc;#���;_�JeS�W��I�&#x0;g��S&#x11;Qs�&#xc;f�ĉ&#xb;���&#x19;Z.����]��R&#x7;i�ˎd�O+&#xd;0&quot;�?�i���Ց&#x15;�.m����&#x4;b�&#x1b;&#x378;���%&#x14;P��&#x0;�����A �v����놠�CahK�l� ��&quot;F�{�+9���|��&#x1b;F&gt;�&#x3;����9w&#xd;�&#x1b;W&#x8;$y�&#x0;������-q��&#x16;&#x10;�+&#x11;��Eٶ�&#xe;&#x1e;h�dR�3l&#xf;��GhTʖv`��n�&#x17;�x��z��k&#xb;ni= �&#x18;8�&#x14;�]QX&#x5;V$&#x1;&#x4;}8q�D&#x1c;��y�&#x6;��D@&#x3;�_ߋ������/&#x0;�(&#x1f;m&#x8;C&#x13;�`^&#x5ee;��IV&#x17;܇�ؠwO&#x1b;&#x1c;�(���[�W����vi��7��&#x1d;z�&#xc;f�&#x4;&#x0;�@&#x7f;��Ϯ�D&#x8;�ס�x�dx8&#x6;�W��&#x1a;�|�L�٣��y��4&#x1f;��4Kq_���߯����C�--��W�&#x83;�&#x19;f&#x2;�F��&#x7;|{2Y�5աw�,�X��ý���D�&#x4;z�=q�#�|d�5�K�&#xf;3�&#x12;�D��IX�e�������&#x1e;;��`�t&#x19;g��fϫW�J@JVLK�L:M�Xƻ�����&#xd;�\&#x1f;�&#x15;o)&#x15;�;�&#xf;�&quot;�&#x4;ypkʱ��Ȳ&#x1a;�PQ,O�&#x3;�g?��&quot;�cA��&#x18;b&#xd;� *ç�&#x14;A.:f94��8z}�&#x11;�a&#xd;
+s�~&#x1d;�{B�.&#x3;w&gt;���	i;w�&#x1a;%�5��r;4J9\�&#x7;U�冭�0)�%�p&#x7f;��3ߩ&#x18;&gt;��)�ؠ�&#x1c;0%�J�Ph�&#x0;;@f�럅�8�_&#x10;&amp;�%DM��&amp;L���F�F�)&#x4;Z&lt;d��&#x7;$Ү�&#x14;&#x14;�d���f&#xe;&amp;&#x1b;���g�� ��\6/�Ii�:�&#x1;(��n�Jp���O@�oxĠks�#�&gt;&#x3;&amp;&#x1a;&#x14;1��]@2&#x19;g�&#x3;��Q&#x1;&#x1d;T�&#x0;���&lt;��&#x7f;�!~&#x13;6h&lt;X��݂q&#x17;a�T��Ps������&#x7;�PrN&#xc;3į�&#xf;�O&#xd;
+2&#x1e;�_&gt;���&#x1e;�̡ǘr_C�xztF��U�&#xe;���}{{�ێ@Y*&#xf;S��BO�M��굆y`��&#x1f;&#x1b;fA%_�?[&#x1;�=O;��&#xc;�4�l�&#x5;����&#x7;&#x10;���&#x8;��f-�/s-&#x19;V���&#x10;g&#xd;
+Wb�qk��(����O�r?&#x13;B�����&amp;&gt;Doa&#xd;&#x14;%&gt;�&#x3;�&#x1e;��!&quot;U�&#x12;�M&#xd;Q&#x1f;���u�0l)6=��T�&#x19;����c���&#x10;r��*~���i�&#x7;&#x1c;&#xd;m*��Ϝ�+����&#x4;&#x1f;�G�U�ll�v&quot;&#x4;�&#xe;�&#x3;&#xd;ʺbG!&#x1e;�(�2q&#x7;y�&#x1e;md	����M�&#xf;�T=&#x1d;���&#x1c;~�N���	E���J�@&#x17;�%&#x8;�����ЃKm&#x1d;�z&#x1a;h1GPE�3Z&#x19;�&#xd;��|2�&#x19;&#x1c;�F&gt;a�	�&#x13;s�C&#x892;�%EJU1p&#xd;
+&#x4;U2R�&#x17;I��{a�2&#x1b;�&#x1a;�&gt;�&#xf;�&#x17;(&#x8;̖9E�:[�x�^�H�5gR�&amp;�k�J0�%�����C�j&#x1e;�@(X��y˜��&#x18;@��S&lt;�rL�8t�&lt;9&#x17;��/%����r�8��}]*E�y���`���|k�t~�&#xb;M&#x5;�V{I&#x2;���,8n&#x1f;��̚Rv���B��d�3&#x5;C&gt;�l��&#x16;�DӨUDG��&#x15;&#xe;�&#x7f;�&#x1b;������!V?�&#x5;��b\Y&#x7f;�)�ٕM]nK�}�aO,&lt;&#x1;ᐦu��έw�&#x1f;r��`�D&#x5;H�&#xd;
+�Adv�&#x7;`&#xc;ySA	}���&#x18;�ȗk��k���q�k!&#x3;(��&#x10;n_�^��ۘ/��2&#x1f;^�&#x7f;3�Q&#x0;é&#x1e;��&#xd;�7�]��&#x1d;E�=&#x17;-VW�^gN&#x1a;K����Ζ�{&#x1b;֡�n��Rs��ȫ�ܺ�iZ��&gt;u^s��W�5~��L&#x1b;�^&#x15;���&#xd;
+J&#x14;���&#x14;K&#x1;�t���b�b&#x13;.WcoF�\�}&#x0;|�����&#xd;
+ǡU��AL�&amp;&#x2;&#x4;&#x14;�t&#x1e;&#xf;5;�?�e�ONc�&#x1a;�&apos;&#x19;�|�&#x1e;~-�u���L�8p+,���&#x1f;dR�&#x0;���*&#xd;��4ڒq&#x7;-bsS�q&#x10;N��&#xe;�!T��&#x4;5�@\�%&#xe;�����H���\��A`&#x10;4c\�g&#x1d;o{�9_\�?j��;&#xc;j&#x11;j&#x11;ϋ&#xb;I�5`�Z�&#x18;B�&#xf;�&#xd;
+;��n&#x1c;��W|MQ�f)	� ����&#xd;
+2&#xb;&#x0;&quot;ށ9��r�8{d:&#x6;�C&lt;�R{�L����0{&#x5;��[���.�]|&#x1;&#x8;��&#x2;�Jq�d��h�&#x1d;v�f&#x8;��h7�Q�#^)w��lf$�oQJϝU�&#x19;y��&#x14;��c&#xd;�D(��t2}�j���&#x7;n既~�W&#x1e;&#x14;�*��P(��rF&#x16;%[&apos;�&#x3;3�?&amp;q$�J�y��w����Ҋ&#x1d;n�+��|���x&#x5;W,8Ȟ&#x18;&#x15;���d�&quot;�tU�*,�Ǌ�+�����t�Q�U%��,ؾ&#x17;�&#x10;%��=&gt;)�&#x1d;�$��&#x17;�a#�I�&lt;&#xd;�ҧaJ�&#x5;&#xb;�J�&#x0;&#x1a;�#s��F���m90�&#x7;&#xb;��ާI%�&amp;�AT�&#x19;y�&amp;i&#xb;3��*z&#x10;�q�I�jQB�&#x16;&#x1e;��Nɝ`�&#x11;�OUm�0V9&amp;&#xf;��&#x12;�&#x3;W~q.&#x11;�pC&#xf;&#xd;�p��&#x11;ي&#x7f;�&quot;3�&#x12;3�����Λ5�w�&#x1f;�&#xb;7�����O��]F��g	7�^t�&#x13;�s���&#x11;�&#x1b;��&#x10;5�&#x12;��&#x5;�VZ�B&#xe;q��Γ�&#x8;-I&#xf;���&#x11;��E�o�h)�N�	���CDNe��&#x18;U�K&#x2;Z{�P&#x14;�����&#x86;�~�q\�드&#x10;�a�&#x6;�X3P��	�A麼H�&#x7f;X�&#x1d;ӁZ�&#x7f;S����&#x19;&#x7f;{�N�_�x�&#x6;��Ӷ�D�?��&#x15;0v��oi�fv&#x1a;�*`�ˉZ�&#x97;#S%��n��(}ֿJo�����q�&#x4;&#x16;W��&apos;�&#x7;b�eR�n&#xd;
+H�&#x18;�����XŤ&#xd;�&quot;&#xd;�&#x12;&#xa9f5;z �&#x16;��j7�&#x14;	��&#x11;��&#x7f;n�m�	�&#x0;&#x11;j]���V&#x15;1��k4ҐjS&#x1f;&#x17;}KrI���q����#CV&#x2;��&#x10;�;��e�&#x1;dc&#x0;��Up#&amp;ۏ&#x15;�+��&#x14;b����c���n&#xc;��w���&gt;yw��&#xc71;&#x1a;j&gt;C�Ÿ�$�G;ě%Q�:܇&#x10;`��&#x7f;��&#xd;&#x7f;Uj8��&#xe;Y4�&#x8;&#x10;&#xd;{�̉7�&#x7f;�m!�8_a�7�[��KBK���^��W�[L�1D&#x3;�;L&#x17;.����C�&#x1f;&#x0;ڝ�5B��)�mV����WCn�6��\4�}G�W���&#x0;arsY���eV?&#x1c;�d��&#x5;` ��54F&#x1a;ى(�&#x1a;o�G�ݻx�T]��!�#V��f�1�&#x4;�$���&amp;Ωߛ�&#x18;�&#x0;�r���0�D&lt;��O�]�I����3(�{�;D�G�&#x12;�Er&#x16;&#x15;ku��L���Y���F&#x17;oW&#x17;&#x15;B*��K�a[�HȲ�\f�&#xe;��v-�&#x12;]rV�����H�&#x3;P&#x1e;&#xf;&#xf;&apos;�&#x16;&#x1;�@qqh���&#x6;z�u�&#x7f;RVC�V&#xb;�CSN�8�t=����E �Q�&#x3;+��J&#x19;w�h���X�	�I���f&#x3;5��d&#x1f;&#x2;�5��)NW%�0��&#x10;&#x4;Bú&#xf;ي�xx,�yO&#x1c;p�l_Yۘ&#xb;�o�&amp;�+V��{���P59��7	p�F�R����&#x18;7�(+�&#x4;��L�Q?&#x13;j�q��+�&#x13;�n��5&#x4;�(���~&#x1c;�a�&lt;�&#x1b;�&#x15;�f�j��$�%x���D��~�&#x19;&#x1;&#xd;
+� ���ۧR&#x6;J�1L^ Y����&lt;���F�����MD6��&#x18;�a�&#x6;�p���3�&#x11;��&#x2;�_!��YB`&#x1c;&#x13;�����y���w×dz&#x12;m&apos;�&#x1;&#x1a;��)�&#x14;�I˼��Va�Z��=��&#xd;
+��=��^��wa�&quot;�V&#x14;]�ys�&#x10;�� x�Khٴ˶�&#xe;&#x19;�XN�¯&#x7f;�:��a7/�Y�Т1�I�MZ���&#xf;����Tk&#x1c;HzN^��ڒ��}��z|&#x1d;�K&#x5;��V��:�n���&#x7;&lt;�&#xf;�̷�Ӓ&#x7;ugd�q3��0�&#xc;����&#x1f;�l�2��$f��TL��&#x14;nxw�F-ܛ^�&#x16;��&#xe;�&#xd;UJ&#x7f;�+9X��w&#x11;�|�M+j�^f5�O�h�3X�d`��#�&#x2;�ڹ`uCM��������m۽Ԣ�_&#x6;��-D&#xe;�d� .Z!sx�&#x12;Z;k&#x3;�:;��D&#x5;&#x7f;��4*p	���&#x3;�|k�Hs#u�s��&amp;Z���&amp;�&#xc;&#x1e;��&#x1;�bW�&#x18;ŷC��ѱ;�&#x6;�&#x1c;�P�(8F-��&#x2;�&#xb;�|���_&#x7;�k��B*&#x14;���&gt;�i&#x1f;&#x12;���t֑&#x19;&#x10;&#x4;;gQ&#x14;��&#x1;��ïu��J����O_�ћ&#x2;;척Q�i&gt;&#x1c;Ԗp�qS�[au�{���&#x13;g�&#x0;s⪑�W��r�&#x16;IwڙS4˅&#x15;��&#xd;
+�&#xd;
+���V�/&quot;&#x7;*����F�&#x18;�&#x8;r�(���4�S&#x11;&lt;&#x5;3�Ppb&#x14;�N�I��~�&#x6;��&#x12;�&#x1f;6����Ũ$��+��QKWm��x�|��묄�he]c&#x4;&#x3;�έ�}�&#x1f;&#x1d;Q&#x4;��yզ�;,�:Yy;�#�\ۮ)&#x1d;�*&gt;�z�&#x6;&#x1c;&lt;&#xd;�$i�&#xb;+��&#x18;@dc&#x4;&#x14;��(�5_�tߟ�ܚ��d�Y��e8јB�&#x5;��&#x8;z��{��߅���8 x&#x13;+&quot;�&#x4;�����jYD#fߐ��d5�0��K�sqM���|�&apos;�ʽ&#xf;o:�1��&#x6;�B�����3�&#x7f;�[�@4�Q&lt;��C��ʮ&#x3;�z{�&#xd;
+B4�d.�&#xe;j�i��UƩ��p�4&#xf;�s���l��E�t&#x8;%Q��&#x1e;&#x14;&#xd;
+&#x16;�Uk&#x1c;|_;(&#x5;�S&lt;��0j�l�D�wL;�O��&#x6;��&#x11;�&gt;&#x2;��6�&#x1d;#�&apos;m��&apos;mE�Bk	I7~&#x7f;�c_��6&#x15;qM�f%�&amp;�,{&lt;�-�o�&#x11;&#x2;�9F&#xd;Q���y�&#xf;��0&#xe;C&gt;�U�8v�8:�+a�&#x14;8�M&#x16;տ&quot;S:.N��t�� 4����]Γə���LH�C^���&#x1;&#x1a;r�3,�&#x18;��1��W�&#x1c;�K���&#x1e;�m�(q&#xf;`L����C&#x1d;y_$&#x1d;F��f�&#x1a;�&#x13;�I�͛&#x4;ϰ�2Ƭ&#x2;^�tt�� ����lݗ�D��&#x8;&#x10;��$m&#x4;&#x18;�u���/�۲��;[��N&#x13;��cj&#x2;��)��@k��6�&gt;)7&gt;�1b�&#x1f;/�{&#x17;&#xd;�Yv&#x1a;}_&#xd;�q�l.�9��&amp;�&#x12;�����ɬ������9�N}��&#x14;��hf�R�D^�&#x0;&#x16;���&#xf;��R�;	P&#x7f;�`I&#x5;���b�&#x5;�io�&#x7f;&gt;a��hI�����Xƭ2�&#x11;m��6&#x7f;�r&#x2;6�1vtf�&#xc;;y���jz���R&#x1a;�&#x17;��K���azDꯎ�����B;��N�]�n�r5��d�DA�[n��zKV&gt;�&#x1b;&apos;⇟-��B`\�����%Z��fuH��_�����i�(&#xf;&#x6;���.}a��&#x7;&#x16;x�X���r�Z��^&#x0;H�O��zNi!��&#x1a;�$&gt;I��bM��Z���3�e���XX&gt;#,��*�&#x12;���&#x2;6c&#x1b;n�;f&#x12;�����&#x3;p��pj4��&#x6;.�Ȧf�]&#x5;�\�d&#x14;Z+Ϣ��	&#xf;���}&#x10;͔&amp;:iV۫���&#xd;F��f:CN�E�),Kf���?�K�CaS&#xd;a?�&#x5c9;:&#xb;&#x12;�&#x4;��\5U���2e�Mn/�&#xd;
+�ߪPF�ݥL�m�&#xf;Ǖj�xv�Q;���/����f[E�^Oa&#xe;�˧ bZ&#x5;��@���ї,��_�=��_u˜l�	&apos;ѫ�|+h	84f�YYg+�_N��C&#x52f;�g�%&quot;��4�m��&#x1;�:��s�Jy�}��q-�s&#x3;��^{1�&#xd;&#x2;|~&#x1a;�/�ǟ���&#x10;H�Z&#x12;�߅0&#x14;��&#x1c;�&#x11;V��%q&apos;����AU�3&#xb;&#x1;B,&#x7f;m%�~Y��h&#x2;�jk^Ai�xBf�I?i�-rW�&#xd;
+\����l�7H�K&#x1f;m����&#x13;:����y�&#x11;�&#x17;&#x1e;gB�&#x2;�7A��ͥ�R&#x12;�&#xc;uDɉ�Ŋ`��s&#xb;K8���&#x0;6t���R[��oyV����:&#xf;��@�/b2��#Cڮ���KL���_�C��&#xb;���Ȍ�&#xe;�k!&#x1a;���&#xd;t�&#x16;���@��&#x3;zHܤ5CPk��憟�&#x7;��T��/eq&#x2;*���&#xd;
+l�&#x6;N���&#xd;
+��[����&#xd;
+ő@�r���3&apos;��,(j�L�r�&#x2;&quot;�Eʯ~A�$�0�%&#x8;�|p�E�tL��j&amp;q��-9�f_v6�&#x16;��&#x1b;ċ&#x10;4�&#x10;�a�&#x5;Q�\m�&#x5;��&#x1d;&#x12;&#xd;.ז����&#x3;�υ#&#x14;&#x6;�b���&#x8;J�I�B&#x14;ػ�9X�a&#x11;�X���Ǻ�Վ���q�vmq�Ag0&#x11;&#x1b;6�lxL�&#xc;W�Z&#xd;UʣBd�2�����y	&#xb;	�+�,�L&quot;F�%�.�or��^�&#x14;�&#xc;�&#x10;Q��&#xf;���q��&#x19;&#x3;n&#xb;�v�^M7&#x1f;\�f�u���&#xf;[^^��&gt;L\&#x1f;w�Gs&lt;;�&#x1e;~�&#xf;P�&#x16;��&#xd;
+�zF�6ڜ&#x13;2m��C�z��&#x1d;Qq�B(ǄdeG�Њ�&#x1a;&#x13;M�H&#xd;
+�&#x8;��J�&#x17;&#x5;�NQ�D��&#x1a;�&#x6;�q&#x1a;.l��A8�&quot;8��B�&#xc;�&#x13;&quot;5���ت[&quot;@:&gt;ڃ&lt;&#x7;�&#x6;�&#x15;�&#x19;Ƹ8dU����Cۛ�&#x1;���&#x1e;&#x3;t鄘0&#xe;�UJT�n�.&#x1b;Sy�� z�F���&lt;�h�2&#x7f;N�&#x1;0��F&#x12;���HW&#x14;i��^�6&#x2;)���V3�uk�.y�0�&#x6;��Cq8�D�lRVj^���n]�&#x0;�hJ_�����c=&#x5;�x�����(���&#x37f;�&quot;&#x1f;����`���Y&#x4;E&#x5;���&#x1b;�C�&#x4;P�&#xc;k��&#xf;&#x1f;�_to����|�C&#x6;ч�F��`::��O&#x16;���v�h�O���D��R�&#x1;k~��&#x10;�&#x18;��(��Yы��yXw�z&#xb;֧� ;&#x10;�&#xb;�)&gt;N�7��z�N��&#x19;M(�X�yuO��=K��F��M�d&#x1c;,D���(�ҮϠ����&#xf;��Y~&#x7;F&#x2;��3��Xi2M����H�0(&#x7f;)rʿw6V&#x89;!�U1�p��&#x16;Q�Y��&#x15;�g	���&#xf;|&#xc;3Ő&#x14;)�����z��VS��vP�p&#x1f;��t$&gt;ѵ�Ɔ�t�&#x12;�&#x13;h��Ø&#x0;&#xc;pǻ&#x2;���p�&quot;�`y%3�le&#x19;��&#x0;����&#x7f;��8��_�Z�����?A��t���&#x61d;&#x7;��&#x19;E&#xd;
+8�&#x13;�[&#x5;&#x7;�a�mR�&#xe;C&#x7f;&#x4;#�-�}.��k��H&#x5;i��(1�BP�&#x15;��P��&#x18;&#xc;������&#x7f;�&#x5cc;�B�]&#x4;&#x18;N&#x0;J&#x0;Gy�c��9$��:&#x18;~�x��c���&apos;������}�5�&#x12;�ӹƿ&#x2;�+,&#x1;&#x1c;�&#xf;����&#x1a;��!�S#�&#x3;�*��h]|bA�&#x16;�k����(H{@�#�X�.��U����A�Lb�)M����&#xe;߳��U�E=���X&#x5;�_���T���*��-&#x12;WD` R�&#x0;��?m�&#x5;o��������ɲ&#x12;;&amp;Oz�ju��T��&#x1d;�&#x16;B�Wޱ�	�&apos;�r&gt;&quot;ZW�&#x7f;r���&#xd;�c~�����xu�&#x8;�?i�l�ܾ�kw�WLE\��&gt;���J�&#x3;G@&#x1;�v�d-���Yu�&#x1d;G&#x18;!&#x18;Y�&#x12;YC&#x8;TR\��Z��88&#x1c;�ѷQ�&#x7;�&#x17;��y&#x18;&#x4;�C��_�m�L��w^	������&#x1f;fqԓ]&amp;&#x15;���L�k�ȟQ)�&#x18;T�m�&#x14;&apos;bsyx�_�P�{�)J&quot;�&#xd;
+�/c��sv���9�nh���X�Ʉ�4&#xc;�0&#xe;�y�,c2&#x16;	V��հ�h�M&#x1a;&apos;�!Ҧ&#x12;W?i�&#xf;;����=}��٭�=~�P�&#x10;km��W,&quot;��Ŕ�Z&#x1;.�K!&quot;�&amp;�=��	Ǡ&amp;e*������&amp;&#xe;��ꗻ�?&quot;*z&#xd;�ʛ�&#x7f;�R�P;��}&#x12;���/�x�{���Ԕ��2�&#x1d;u&lt;��&#x12;���&#x7f;A�#c&apos;�^&#x19;�!6 x)r&#x11;Cm�AҬ`�L��&#x1b;�n1;&#x1d;��+&#x0;I=��yk���&#x12;e��Xȶjp�&#x1c;&amp;o&#x4;i&#x1e;Ds�H��ΥF�&amp;�����^;=��c�����ֽq�&#x8e;��xh�&#x14;5��և�@�{&#x16;�;���&#x14;p&#x1b;� *&#x15;&#x1d;wM�m�r�nۮ�&#x4;���&#xc;g&#x1b;gЙ��1Ƹ&#x6;ɺ�&#xd;
+�&#x15;Z5���5IoJ�I�x��7�p&#x1b;�S�?w�̼��&#xf;�C&#x18;e8�˕]u��Nx���&#x19;]�&#x5cf;�&#xf;G�3�&apos;&#x13;���&#xf;���`&#xc;� +;�&#x7f;�L)&#x8;Gb&#x7f;&#xb;&#x11;bQ�&#xb;&lt;Z�&#x7;&#x1;��8K:reJ��N]&#x12;W1��K1j�O5��h�\i{�u%�&#x7f;��&#xf;�9��މŔ�h_&#xf;D�x���&gt;4�M����rԠv��F������&apos;��U&#x7;&#xd;��D�n{&#x7;�֩&#x12;Դ�r9�	B&#x11;�&#xf;[�&#x12;�@SQk&#x1c;�	(&apos;@i�v|�n�9lڑ�&#xd;��T�&#x11;֣�6�K�;r&#x19;��&#xc;@c���!��b!�&#x1d;&#x7;��O�!Tn0չ�K}�&#xd;˷s�;&#x4;�����B�&quot;�&#x99;���&lt;��M��M=�Ui-��&#x1b;��1C��v��d��&#x1f;֔�&#x14;&apos;��F�Zm�&quot;�sT�M0�&apos;�&#x6;�`u1c�~�K&#xe;����&#xc;�&#x19;&#xd;SMM�D&#x15;&#x1d;�\YGX��&#x17;):�d�&lt;�&#x1f;&#x1;A�U���:�ʯ�j��&#x18;@a&#x16;&amp;Ӛ��E�LF��QRK��s�	�YR�&#xd;pm�8�&#xd;p�={�=�v&apos;K�v&#x10;GMY!&#x7f;�&apos;���(�#�N&#x3;I&#x12;˺%D���&quot;����wYp�lx�p�������&#x2;g2������&amp;���Y��7�D&apos;��p�+��b��&#x17;Ca�������Ԁ[���1���P�U��&#x18;X&#x7f;CH�&#x7f;�d&#x0;�,M@R�x�]-U���Y&#x18;��&amp;�4P_&#xd;A颚&#x17;��k�R&#x1c;�f�&#x1b;Z?�?��1&#x10;� �&#x3;M�&#x2;�?�&#x1a;�2&#x7f;��tT�@����&#x10;NP�u&#x15;.��v�Ztg��&#x18;�Yv�4���7��8&#x0;��&#x7f;~&gt;5�=&#x7;�&#x18;���2�K��&#x3;&#xb;�X2d��O&lt;@3?]՜����&#xd;Ƴ�+s:��&#x8;&amp;T$������J�d�|�J�̰�&quot;&#x5;G����8�&amp;e&#x6;&#x3;M��b��F�UG!E&#x1a;&#x4;��H��^�7�T��*�2̑�&#xe;�ai����m�e��&#x16;&#x4;&#x1e;A�uʩ�i��&#x3;j�&#x17;[Z��t&#xd;�b&#x0;&apos;(Pe)l�0.�4&#xd;�&#x5;L=\v�&#x7;��aU,~˼nU�&#x1d;+ͬzt��X�F�8�&#x15;�E&#x11;.�$���.�۶�znm�L)��&#x10;|mBM&#x16;���k�Yx&#x1a;�1�aa��&amp;�H���&#x15;(]4,�����&#x11;GǷ&#x16;���&#x12;-ɧ����^��ml��Z�l&#x12;6~&#x18;&#x19;g6=&#xc;����&#xf;&#xd;
+�w���&#x19;*e&#xe;�YL�&#x14;B�&#x3;4�~9�Cڙ&#x6;&#x6;[A�F��&gt;b��&#x1a;�yk+)WY&#x15;�&#x1d;&#x7f;Y��ćL`cjf�RP/�p`�.#Q%&#xc;�R�&#x2;[&#x15;A&#x16;�&#x7;��H[��&#x1e;����&#x5;&#xb;;�亘5��|&#x5;��&#xc;�&#x11;�DnD�5Jו��i��Pn�&#x15;�;��&#x95;��x�&#x7;K�&#x16;�&#x1b;�R��8&#x7f;���\�T2�&#x6;9V�&#x17;&gt;��p��ږ��� &#x1e;�&#xf;&#xd;�%T��(&#x1b;�-�&#xd;�Ý�h�&apos;&#x12;�7&#x15;��&#x13;dם�l���&#x0;u,x�_��s�s@���|�0��&#x7f;�&#x1d;����t8ʆ�{p��&#x1c;��&#x0;5�&gt;��&#x1f;W�pSS��e�&#xc;���^&#x8;Z(dy�&#x3;��#&#x14;z�ف)}����6��&#x14;B&#x10;Sj	���:&gt;�&#x0;�ذԠ&#xd;
+��.&#x11;�q���1��9��Y��&#x8;@t}���X9DC�Ǽ�L�&#x2;OˇB���a/��2�o����� q˛.��&#x17;�L�������kl �z��&#x17;$Jm�Z��ǂ�l�¡/v�&#x1;&gt;�&#x1;&#x4;{]��q��&#x1d;O��&#x1a;&#x5;�*μGB��&#x1f;&#x15;M&#x19;��&#x1e;5뱓/�zy�uq��{�옒sn܌�n��u`P/�z~�WK�W�Ym\�H��f�&#xd;
+�������3���GP�|J_S�g�:���娦&apos;B�%�f�A�E4$n&#x17;a.Z&#x1d;&#x1f;#O&#x11;�vgܽ���Ce&#x3;��*,�c���&quot;trLŖ&#x14;�&#xe;�i�&#xc;&#x1;�J&#x1c;�j�*�!n�y�ؠ��&#x7;&#xf;�l]�f�ԚT&amp;��|Shw&#x0;������;�?�8k�4����a&#x19;&#x8;[&#x16;Fl1&#x8;n�$�&#x1d;&#x11;&#x12;&#x12;�H�x�S��!W]�&#x3;�pe&#x1c;��&#x9d;����)&#x8;Yj�&#xe;e1&#x17;�&amp;r&#xf;�+d�Oȶ&#x14;-h�&#x6;��$���&#xc;JV)�`&amp;o��&#x14;�胞Fd!�D&#x1c;�&lt;�&#x11;(}�&gt;&#x2;T^�1JI�,�&lt;c����G��W%&#x8;��-V=�u�j������&#x10;˨f@���&gt;�@��;Ǭ2\AG�/��&#x17;��яr&#x13;�3A\��k		Gemx&quot;�&quot;�&#x18;&#xc;�y!�gg*S	U�a��H�Զ��&quot;���i&#xd;aN�{:l.nU��8��&#x10;&#x10;��@��a&#x1e;?V&#x10;��$~��&#x17;!�%��-cYy�&#x8;&#x18;�ӟ�U�&#x6;�c4�z�&quot;����n&#x16;&#x1f;*mor�M_�F(X�����P�A&#x1d;&#x19;Z�AA���$�Fu�G�º�䦏�&#x17;�&#x16;ɑ!�Q�&#x0;E+�C&#x1;R�&apos;&#x12;�յ&#x1d;T���&#xb;W��L�J�O(U&#x1d;&#x1f;��&#xb;ĥ`&lt;�i�ʚh���i�|9�3�_��&quot;�&#x1e;�1�&#x7f;j=��w�ud�#۱Ӱ�r�䕁�]��&#x15;���&#x18;|��&#x8;r&#x6;W&#x83;�&#xc;��k&#x1b;�J&#x2;B&#x17;M�&quot;�8�p�FC&#xe;���&#x1c;�v��d&#x1e;W}ߪ)�&#x11;&#xb;L&#x18;������T韤Sͩ�&#x10;&#x17;�6�	�&#x8;Yq&#x8;r�����X_g;����~�������Z�~&apos;��ٱ�jd��v�9���&#x16;|&#x7;�&#x1e;&#xd;p���&#xb;6̆n��&#x10;�&#x3;�h�i�W&#xc;S&#xe;PV&lt;�տ&#x16;�U/��&#x10;r&#x19;�&#x6;���DPh�c��&#x14;X�m%&#x5;S&#x4;��*�Zͷ(�UC,�X�S�c��&#x5;��ѧ&#x3;E&#x12;Y��Og.�x�0��G��R��t1&gt;..&lt;�&#x7;�ED��f&#xf;b�E&amp;4&#x4;�&#x7f;�lU�ǍEO7�N*�{�&gt;��g&#x1b;�&#xd;
+�5�K���%�J&#x5;/aPD:&#x17;V�\p\�p�&amp;Q�.��&#x4;�&#x15;�b&amp;VZ&gt;�l���{.J�q&#x8;��Ap�T��?~��&#x7f;��; ��(F&#x1c;���N^`�r ­&#xb;��2&#x1a;�,���gZ�aD�f��+`&#x2;�:�����&#x1b;&#x4;0���Xz&#x11;&#x13;�y&#x1f;&#x1a;&#x1b;��h��&#x6;ҹ��_&#x10;&#xc;#�;�h���+|iy��$o�S��Gu͖&#x1e;P��;��t�&#x0;N&gt;/6�&#x1b;{͝l�%_��&apos;HBc�&#xc;/$�;)�v&apos;?��訃�&#x1b;�J&#x8;&#x15;&quot;�z&#x4;M��5�P����=�5�tͅ���`z��8�1�s�&#xd;��gǾ�&#x3;�$�/������)�G&#xb;m�$&#x7;�rǨ��i8al(/&#x1c;�S&apos;�(�k�&#x10;ܳ|{1&#x7bc;�&#x1f;��İX��uVn�,�-Bg&lt;���҆	B�!,P�9�&#x1d;YPY�j=�]f%l��&#x12;��N���&#x1c;�&#x15;w}/�G&#x3;�^��D�!&#x1f;�fZ&#x15;�I�o�K�őr�.o&#x7;2��Sd���8&#x7f;���k&#x14;��^�D�&#x19;�Z��&#x13;��&#x16;��h�&quot;&#x1e;^�[&#xb;&#x1b;!_&lt;&#xd;
+wʓʥۻj݄m���&#x17;��J�|%� �&#x13;ݠX�&#x4;0��&#x3;&#x17;�&#x3;�+&#x13;&apos;5q�-�4&#x4;��9~�&#xb;�&#x2beb;Q��&#x7f;&#xf;k�&gt;�l�f#�0�&#x12;�I`���&#x1e;	�r &#x3;�&lt;���&#x1a;Wg&#xd;
+Q&#x18;�ey.qJ���tj�&#x1a;/wf�&apos;�&#x14;�f�1��&#x2;&#x10;&#x1b;Wں��w&#x17;k��U�&#x14;	&#x1a;���j��&#x15;̣X&#x15;³�x�&#x1f;�/�&#x14;��&quot;&#x18;�&apos;&#x1c;��1���&#x10;�&#x6;&#x1d;&#x0;o�&#x10;&#x1;&#x1a; ���˳��}���1�]���&#x1; �&#x8;��M�$��e &#x1;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">clientservices.googleapis.com</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/uma/v2</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Accept-Language" elementType="Header">
+                    <stringProp name="Header.name">Accept-Language</stringProp>
+                    <stringProp name="Header.value">en-us,en</stringProp>
+                  </elementProp>
+                  <elementProp name="X-Chrome-UMA-Log-SHA1" elementType="Header">
+                    <stringProp name="Header.name">X-Chrome-UMA-Log-SHA1</stringProp>
+                    <stringProp name="Header.value">CkgzD5RfqPR5e15skZt4Jka5ZmzTmZhvQBmRf0mnO1+QH41EPNOcr+4p9luxa1dCiF4H0SPzKgMwUiHiNJ28oXflZ8jkjcW/C1cQARogQwsoYR18ZxIlrkCRVeitfVYBekHQ7/9Jyvr+Szv31REgAQ==</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/vnd.chrome.uma</stringProp>
+                  </elementProp>
+                  <elementProp name="X-Chrome-UMA-ReportingInfo" elementType="Header">
+                    <stringProp name="Header.name">X-Chrome-UMA-ReportingInfo</stringProp>
+                    <stringProp name="Header.value">CkTvuFFP0R5NeoO3LrLhZbsjG1yI3R2soxPgV8fPn/0I0SO8jmLYoaBAQ/TnTJHZP4k5rb6CG5ONTb6f6GhPL55rJHdeRxABGiC3oIqan7rsDP/3kDQxwAn2WmTHLT+6AFg+YoUE/t9DPiAB</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept-Encoding" elementType="Header">
+                    <stringProp name="Header.name">Accept-Encoding</stringProp>
+                    <stringProp name="Header.value">gzip, deflate</stringProp>
+                  </elementProp>
+                  <elementProp name="User-Agent" elementType="Header">
+                    <stringProp name="Header.name">User-Agent</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
+        <stringProp name="ProxyControlGui.port">8888</stringProp>
+        <collectionProp name="ProxyControlGui.exclude_list">
+          <stringProp name="-2063843150">(?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2)</stringProp>
+        </collectionProp>
+        <collectionProp name="ProxyControlGui.include_list"/>
+        <boolProp name="ProxyControlGui.capture_http_headers">true</boolProp>
+        <intProp name="ProxyControlGui.grouping_mode">0</intProp>
+        <boolProp name="ProxyControlGui.add_assertion">false</boolProp>
+        <stringProp name="ProxyControlGui.sampler_type_name"></stringProp>
+        <boolProp name="ProxyControlGui.sampler_redirect_automatically">false</boolProp>
+        <boolProp name="ProxyControlGui.sampler_follow_redirects">true</boolProp>
+        <boolProp name="ProxyControlGui.use_keepalive">true</boolProp>
+        <boolProp name="ProxyControlGui.sampler_download_images">false</boolProp>
+        <intProp name="ProxyControlGui.proxy_http_sampler_naming_mode">0</intProp>
+        <stringProp name="ProxyControlGui.proxy_prefix_http_sampler_name"></stringProp>
+        <stringProp name="ProxyControlGui.proxy_pause_http_sampler"></stringProp>
+        <boolProp name="ProxyControlGui.notify_child_sl_filtered">false</boolProp>
+        <boolProp name="ProxyControlGui.regex_match">false</boolProp>
+        <stringProp name="ProxyControlGui.content_type_include"></stringProp>
+        <stringProp name="ProxyControlGui.content_type_exclude"></stringProp>
+      </ProxyControl>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
