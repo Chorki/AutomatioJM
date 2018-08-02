@@ -1,0 +1,13 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1532524261385,1837,HTTP Request,200,OK,validate sample application performance 1-2,text,false,Test failed: text expected not to contain /Error/,13805,120,4,4,1540,0,534
+1532524261796,1428,HTTP Request,200,OK,validate sample application performance 1-4,text,true,,73939,127,4,4,1142,0,124
+1532524263494,3892,HTTP Request,200,OK,validate sample application performance 1-2,text,true,,66766,244,4,4,108,0,54
+1532524267427,2,Debug Sampler,200,OK,validate sample application performance 1-2,text,true,,392,0,4,4,0,0,0
+1532524261385,7219,HTTP Request,200,OK,validate sample application performance 1-1,text,false,Test failed: text expected not to contain /Error/,415175,351,3,3,1836,0,1489
+1532524263485,5275,HTTP Request,200,OK,validate sample application performance 1-4,text,false,Test failed: text expected not to contain /Error/,415173,351,3,3,565,0,281
+1532524268776,1,Debug Sampler,200,OK,validate sample application performance 1-4,text,true,,397,0,3,3,0,0,0
+1532524261524,7734,HTTP Request,200,OK,validate sample application performance 1-3,text,false,Test failed: text expected not to contain /Error/,519721,238,2,2,1402,0,388
+1532524269271,1888,HTTP Request,200,OK,validate sample application performance 1-3,text,true,,208783,248,2,2,137,0,70
+1532524271163,1,Debug Sampler,200,OK,validate sample application performance 1-3,text,true,,391,0,2,2,0,0,0
+1532524268617,4917,HTTP Request,200,OK,validate sample application performance 1-1,text,true,,62115,350,1,1,792,0,471
+1532524273537,0,Debug Sampler,200,OK,validate sample application performance 1-1,text,true,,387,0,1,1,0,0,0

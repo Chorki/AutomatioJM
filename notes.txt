@@ -1,0 +1,10 @@
+report gen, analyse reports understanding kpi
+jmx test plan
+ldap test plan
+links shared by Priyo
+setup Jenkins and Integrate
+
+
+jmeter -n -t cation of the jmxfile> -l <location of result file> -e -o <location of the outpu file>
+
+cn=LDAP USER, dc=test,dc=com
